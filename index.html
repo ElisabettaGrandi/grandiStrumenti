@@ -25,6 +25,7 @@
                     document.getElementById("btnPrev").onclick = function () {
                         let s = document.getElementById("immagineHome").src;
                         var i = parseInt(s.substring(30,31));
+			    document.write(s);
                         if(i == 1) {
                             document.getElementById('immagineHome').src = 'img/5.jpg';
                         } else {
