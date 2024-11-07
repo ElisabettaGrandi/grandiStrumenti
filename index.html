@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Balsamiq Sans">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>		
+        <div>
+            <div id="titolo" style = "background-image: url('https://images.pexels.com/photos/164935/pexels-photo-164935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover;"> 
+                <a id="testoTitolo" class="centroVert">Grandi Strumenti </a>
+            </div>
+            <div id="viaFloat"> </div>
+            <div id = "menu"> 
+                <a href="index.html" class = "testoLinkMenu"> Homepage </a>
+                <a href="vendita.html" class = "testoLinkMenu"> Articoli in Vendita </a>
+                <a href="visita.html" class = "testoLinkMenu"> Vieni a visitarci </a>
+            </div>
+            <br>
+            <br>
+            <div id="corpo">
+                <img src="img/1.jpg" class="centro" id="immagineHome" style = "height: 300px;">
+                <input type="button" id="btnPrev" class="centroVert" value="<"> 
+                <input type="button" id="btnNext" class="centroVert" value=">" onclick="nextImg()"> 
+                <script type="text/javascript">
+                    document.getElementById("btnPrev").onclick = function () {
+                        let s = document.getElementById("immagineHome").src;
+                        var i = parseInt(s.substring(30,31));
+                        if(i == 1) {
+                            document.getElementById('immagineHome').src = 'img/5.jpg';
+                        } else {
+                            document.getElementById('immagineHome').src = 'img/'+(i-1)+'.jpg';
+                        }
+                    };
+                    document.getElementById("btnNext").onclick = function () {
+                        let s = document.getElementById("immagineHome").src;
+                        var i = parseInt(s.substring(30,31));
+                        if(i == 5) {
+                            document.getElementById('immagineHome').src = 'img/1.jpg';
+                        } else {
+                            document.getElementById('immagineHome').src = 'img/'+(i+1)+'.jpg';
+                        }
+                    };
+                </script>
+                <br>
+                <div id="sottotitolo">
+                    Grandi Strumenti e' un negozio di successo che trasmette l'amore per la musica da anni
+                </div>
+                <div id="testo">
+                    Clicca su "Articoli in Vendita" per ulteriori informazioni <br>
+                    Clicca su "Vieni a visitarci" per ulteriori informazioni
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

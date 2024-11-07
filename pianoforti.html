@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Balsamiq Sans">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>		
+        <div>
+            <div id="titolo" style = "background-image: url('https://images.pexels.com/photos/164935/pexels-photo-164935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover;"> 
+                <a id="testoTitolo" class="centroVert">Grandi Strumenti </a>
+            </div>
+            <div id="viaFloat"> </div>
+            <div id = "menu"> 
+                <a href="index.html" class = "testoLinkMenu"> Homepage </a>
+                <a href="vendita.html" class = "testoLinkMenu"> Articoli in Vendita </a>
+                <a href="visita.html" class = "testoLinkMenu"> Vieni a visitarci </a>
+            </div>
+            <br>
+            <br>
+            <div style="align-items:left;">
+                <input type='button' id='btnPrev' name='btnPrev' value='Indietro' style="margin-left: 30px;"> <br>
+            </div>
+            <div id="corpo">
+                <script type="text/javascript">
+                    document.getElementById("btnPrev").onclick = function () {
+                        window.location.href = 'vendita.html';
+                    };
+                </script>
+                <br>
+                <div id="elementoLista">
+                    <img id='immagineLista' src="img/coda.jpg" /> 
+                    <div id="testo2">
+                        <a style = "font-size: 16px">Pianoforte</a><br>
+                        <a>Pianoforte a coda</a>
+                    </div>
+                </div>
+                <br>
+                
+                <div id="elementoLista">
+                    <img id='immagineLista' src="https://images.pexels.com/photos/164951/pexels-photo-164951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" /> 
+                    <div id="testo2">
+                        <a style = "font-size: 16px">Tastiera</a><br>
+                        <a>Pianoforte elettrico</a>
+                    </div>
+                </div>
+
+                <div id='viaFloat'> <br> </div> <br><br>
+                <div id=testo>
+                    <a id='testo'> Coming Soon... </a> <br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

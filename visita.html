@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Balsamiq Sans">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>		
+        <div>
+            <div id="titolo" style = "background-image: url('https://images.pexels.com/photos/164935/pexels-photo-164935.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover;"> 
+                <a id="testoTitolo" class="centroVert">Grandi Strumenti </a>
+            </div>
+            <div id="viaFloat"> </div>
+            <div id = "menu"> 
+                <a href="index.html" class = "testoLinkMenu"> Homepage </a>
+                <a href="vendita.html" class = "testoLinkMenu"> Articoli in Vendita </a>
+                <a href="visita.html" class = "testoLinkMenu"> Vieni a visitarci </a>
+            </div>
+            <br>
+            <br>
+            <div id="corpo">
+                <img src="img/mappa.png" class="centro" id="immagine" style = "height: 300px;">
+                <br>
+                <input type='button' id='btnPrev' name='btnPrev' value='Vai a Google Maps'> <br>
+                <script type="text/javascript">
+                    document.getElementById("btnPrev").onclick = function () {
+                        window.location.href = 'https://www.google.it/maps/place/Via+Milano,+3,+34132+Trieste+TS/@45.6545217,13.7660278,2552m/data=!3m1!1e3!4m6!3m5!1s0x477b6b6e66cfa0f5:0xab8859d0e40cefc0!8m2!3d45.6544962!4d13.7712098!16s%2Fg%2F11csp5606n?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D';
+                    };
+                </script>
+                <br>
+                <div id="testo">
+                    Ci trovi a Trieste in Via Milano 3!
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
