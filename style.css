@@ -123,16 +123,7 @@ a.testoLinkMenu:hover      {
 	/*border: 2px solid black;*/
 }
 
-.btnNext {
-	background-color: #f1c332;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-	border-radius: 8px;
-	font-family: "Balsamiq Sans";
-}
-
-.btnPrev {
+.button {
 	background-color: #f1c332;
 	font-size: 16px;
 	font-weight: bold;
