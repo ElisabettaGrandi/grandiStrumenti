@@ -132,7 +132,7 @@ a.testoLinkMenu:hover      {
 	font-family: "Balsamiq Sans";
 }
 
-#btnPrev {
+.btnPrev {
 	background-color: #f1c332;
 	font-size: 16px;
 	font-weight: bold;
